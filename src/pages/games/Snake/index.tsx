@@ -1,6 +1,6 @@
-import Reac, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { GameComponentProps } from '@/types';
-import { GRID_SIZE, SPEED, Position, Direction } from './constans';
+import { GRID_SIZE, SPEED, Position, Direction } from './constants';
 
 const SnakeGame: React.FC<GameComponentProps> = ({ onExit }) => {
   const [snake, setSnake] = useState<Position[]>([{ x: 10, y: 10 }]);
