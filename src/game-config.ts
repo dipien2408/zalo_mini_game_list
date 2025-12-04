@@ -1,6 +1,7 @@
 import {GameInfo} from "@/types";
 import MathQuizGame from "@/pages/games/MathQuiz";
 import SnakeGame from "@/pages/games/Snake";
+import LuckyWheelGame from "@/pages/games/LuckyWheel";
 
 export const GAME_LIST: GameInfo[] = [
   {
@@ -19,6 +20,15 @@ export const GAME_LIST: GameInfo[] = [
     icon: "🐍",
     component: SnakeGame,
     color: 'bg-green-100 text-green-600'
+  },
+
+  {
+    id: "lucky-wheel",
+    name: "Vòng quay may mắn",
+    description: "Cơ hội trở thành tỷ phú, sao lại không thử!",
+    icon: "🎡",
+    component: LuckyWheelGame,
+    color: 'bg-purple-100 text-purple-600'
   }
   //future games here
   //...
